@@ -8,10 +8,6 @@ var ajaxCall = (query, language) => {
         query: query,
         language: language
       }),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${key}`,
-      },
       crossDomain: true,
       success: function (response, status, xhr) {
         resolve({ response, status, xhr });
